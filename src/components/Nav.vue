@@ -4,16 +4,17 @@
       <v-row>
         <v-col cols="12" lg="6" md="6" sm="12">
           <v-container class="d-flex justify-center justify-sm-center">
-            <v-img
+           <img src="@/assets/logo.png" width="150" height="auto" alt="Pokemon Logo">
+            <!-- <v-img
               eager
-              alt="Brasão de Florânia"
+              alt="Logo Pokemón"
               class="shrink"
               src="@/assets/logo.png"
               transition="scale-transition"
               :contain="true"
               max-width="150"
               height="auto"
-            />
+            /> -->
           </v-container>
         </v-col>
         <v-col cols="12" lg="6" md="6" sm="12">

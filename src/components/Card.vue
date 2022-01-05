@@ -26,12 +26,16 @@
       </v-card-subtitle>
       <v-card-text>
         <v-container>
-          <v-img
-            class="poke-img"
-            width="auto"
-            height="auto"
-            :src="pokeSprite"
-          />
+          <v-img eager class="poke-img" width="auto" height="auto" :src="pokeSprite">
+            <template v-slot:placeholder>
+              <v-row class="fill-height ma-0" align="center" justify="center">
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                ></v-progress-circular>
+              </v-row>
+            </template>
+          </v-img>
         </v-container>
       </v-card-text>
     </div>
